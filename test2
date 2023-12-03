@@ -1,0 +1,16 @@
+read_mat MA_TA ,3,4,5,10    .00, -761
+read_mat MAT_A 4,4,3,2,7,7,8,5,3,-654.2,1133.96
+read_mat MAT_B,432.5,,257.21, -13463.3, 232
+read_mat MAT_C ,125,12,432,-16.43.2,256
+read_mat MAT_A ,4,4,3,2,7,7,8,5,3,-654.2,1133.96
+read_mat MAT_B,432.5,+63,257.21, -13463.3, 232
+read_mat MAT_C ,125,12,432,-16.432,256
+mul_mat MAT_A,MAT_B,MAT_D
+add_mat MAT_B,MAT_C,MAT_E
+sub_MAT MAT_A,MAT_C,MAT_F
+sub_mat MAT_A,MAT_C,MAT_F
+mul_scalar MAT_D,-12.2,MAT_C
+trans_mat MAT_D,MAT_D
+stop
+
+

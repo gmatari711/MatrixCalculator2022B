@@ -1,0 +1,289 @@
+Welcome to the AWESOME MATRIX CALCULATOR
+
+
+READ MATRIX
+-------------------------------------
+DETAILS : Set MAT values according to the list of real numbers provided, 
+padding with zeros if entered less than 16 values.
+
+SYNTAX : read_mat MAT , REAL_NUMBER,....,REAL_NUMBER
+
+
+
+ADDITION OPERATOR
+-------------------------------------
+DETAILS : Addition of MAT1 and MAT2 - result assigned to MAT3.
+
+SYNTAX : add_mat MAT1 , MAT2 , MAT3
+
+
+
+SUBTRACTION OPERATOR
+-------------------------------------
+DETAILS : Subtract MAT2 from MAT1 - result assigned to MAT3.
+
+SYNTAX : sub_mat MAT1 , MAT2 , MAT3
+
+
+
+MULTIPLICATION OPERATOR
+-------------------------------------
+DETAILS : Multiplication of MAT1 and MAT2 - result assigned to MAT3.
+
+SYNTAX : mul_mat MAT1 , MAT2 , MAT3
+
+
+
+MULTIPLICATION BY SCALAR OPERATOR
+-------------------------------------
+DETAILS : The multiplication of REAL_NUMBER and MAT1 - result assigned to MAT2.
+
+SYNTAX : mul_scalar MAT1 , REAL_NUMBER , MAT2
+
+
+
+TRANSPOSE
+-------------------------------------
+DETAILS : Assign the transposition of MAT1 to MAT2.
+
+SYNTAX : trans_mat MAT1 , MAT2
+
+
+
+PRINT MATRIX
+-------------------------------------
+DETAILS : Prints the matrix MAT.
+
+SYNTAX : print_mat MAT
+
+
+
+QUIT - LEAVE NOW AND NEVER COME BACK (GOLLUM).
+-------------------------------------
+DETAILS : Exit calculator.
+
+SYNTAX : stop
+
+
+
+$>read_mat MAT_G, 3.2, 8   
+
+illegal matrix name.
+
+$>read_mat mat_a, 3.2, -5.3   
+
+illegal matrix name.
+
+$>do_it MAT_A, MAT_B, MAT_C   
+
+unknown operator.
+
+$>Add_Mat MAT_A, MAT_B, MAT_C   
+
+unknown operator.
+
+$>read_mat MAT_A, abc, 567   
+
+not a real number.
+
+$>read_mat MAT_A, 3, -4.2, 6,   
+
+extraneous text after command.
+
+$>read_mat
+
+missing argument.
+
+$>mul_mat MAT_B, MAT_C  	
+
+missing argument.
+
+$>trans_mat MAT_B, MAT_C, MAT_D  
+
+extraneous text after command.
+
+$>print_mat, MAT_A
+
+multiple consecutive commas
+
+$>trans_mat MAT_A  MAT_B
+
+missing a comma.
+
+$>sub_mat MAT_A, , MAT_B, MAT_C   
+
+multiple consecutive commas
+
+$>mul_scalar MAT_A, MAT_B, MAT_C 
+
+not a real number.
+
+$>stop now 
+
+extraneous text after command.
+
+$>print_mat MAT_A
+
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>print_mat MAT_B
+
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>print_mat MAT_C
+
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>read_mat MAT_A, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6 
+
+   1.00    2.00    3.00    3.00 
+   4.00    5.00    6.00    7.00 
+   8.00    9.00    1.00    2.00 
+   3.00    4.00    5.00    6.00 
+
+$>read_mat MAT_B, 1, 2.3456, -7.89
+
+   1.00    2.35   -7.89    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>read_mat MAT_C, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 
+
+   1.00    2.00    3.00    4.00 
+   5.00    6.00    7.00    8.00 
+   9.00   10.00   11.00   12.00 
+  13.00   14.00   15.00   16.00 
+
+$>print_mat MAT_A 
+
+   1.00    2.00    3.00    3.00 
+   4.00    5.00    6.00    7.00 
+   8.00    9.00    1.00    2.00 
+   3.00    4.00    5.00    6.00 
+
+$>print_mat MAT_B 
+
+   1.00    2.35   -7.89    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>print_mat MAT_C 
+
+   1.00    2.00    3.00    4.00 
+   5.00    6.00    7.00    8.00 
+   9.00   10.00   11.00   12.00 
+  13.00   14.00   15.00   16.00 
+
+$>add_mat MAT_A, MAT_B, MAT_D 
+
+   2.00    4.35   -4.89    3.00 
+   4.00    5.00    6.00    7.00 
+   8.00    9.00    1.00    2.00 
+   3.00    4.00    5.00    6.00 
+
+$>print_mat MAT_D 
+
+   2.00    4.35   -4.89    3.00 
+   4.00    5.00    6.00    7.00 
+   8.00    9.00    1.00    2.00 
+   3.00    4.00    5.00    6.00 
+
+$>sub_mat MAT_B, MAT_A, MAT_E 
+
+   0.00    0.35  -10.89   -3.00 
+  -4.00   -5.00   -6.00   -7.00 
+  -8.00   -9.00   -1.00   -2.00 
+  -3.00   -4.00   -5.00   -6.00 
+
+$>print_mat MAT_E 
+
+   0.00    0.35  -10.89   -3.00 
+  -4.00   -5.00   -6.00   -7.00 
+  -8.00   -9.00   -1.00   -2.00 
+  -3.00   -4.00   -5.00   -6.00 
+
+$>mul_mat MAT_B, MAT_C, MAT_F 
+
+ -58.28  -62.83  -67.37  -71.92 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>print_mat MAT_F 
+
+ -58.28  -62.83  -67.37  -71.92 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>mul_scalar MAT_A, 12.5, MAT_A 
+
+  12.50   25.00   37.50   37.50 
+  50.00   62.50   75.00   87.50 
+ 100.00  112.50   12.50   25.00 
+  37.50   50.00   62.50   75.00 
+
+$>print_mat MAT_A 
+
+  12.50   25.00   37.50   37.50 
+  50.00   62.50   75.00   87.50 
+ 100.00  112.50   12.50   25.00 
+  37.50   50.00   62.50   75.00 
+
+$>trans_mat MAT_C, MAT_C 
+
+   1.00    5.00    9.00   13.00 
+   2.00    6.00   10.00   14.00 
+   3.00    7.00   11.00   15.00 
+   4.00    8.00   12.00   16.00 
+
+$>print_mat MAT_C 
+
+   1.00    5.00    9.00   13.00 
+   2.00    6.00   10.00   14.00 
+   3.00    7.00   11.00   15.00 
+   4.00    8.00   12.00   16.00 
+
+$>read_mat MAT_B,       0 
+
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>print_mat       MAT_B 
+
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>mul_mat MAT_A,MAT_A,MAT_A 
+
+6562.50 7968.75 5156.25 6406.25 
+14531.25 17968.75 12968.75 15781.25 
+9062.50 12187.50 13906.25 15781.25 
+12031.25 14843.75 10625.00 12968.75 
+
+$>print_mat MAT_A 
+
+6562.50 7968.75 5156.25 6406.25 
+14531.25 17968.75 12968.75 15781.25 
+9062.50 12187.50 13906.25 15781.25 
+12031.25 14843.75 10625.00 12968.75 
+
+$>
+
+$>ÿ
+Illegaly terminated by EOF. 

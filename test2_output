@@ -1,0 +1,147 @@
+Welcome to the AWESOME MATRIX CALCULATOR
+
+
+READ MATRIX
+-------------------------------------
+DETAILS : Set MAT values according to the list of real numbers provided, 
+padding with zeros if entered less than 16 values.
+
+SYNTAX : read_mat MAT , REAL_NUMBER,....,REAL_NUMBER
+
+
+
+ADDITION OPERATOR
+-------------------------------------
+DETAILS : Addition of MAT1 and MAT2 - result assigned to MAT3.
+
+SYNTAX : add_mat MAT1 , MAT2 , MAT3
+
+
+
+SUBTRACTION OPERATOR
+-------------------------------------
+DETAILS : Subtract MAT2 from MAT1 - result assigned to MAT3.
+
+SYNTAX : sub_mat MAT1 , MAT2 , MAT3
+
+
+
+MULTIPLICATION OPERATOR
+-------------------------------------
+DETAILS : Multiplication of MAT1 and MAT2 - result assigned to MAT3.
+
+SYNTAX : mul_mat MAT1 , MAT2 , MAT3
+
+
+
+MULTIPLICATION BY SCALAR OPERATOR
+-------------------------------------
+DETAILS : The multiplication of REAL_NUMBER and MAT1 - result assigned to MAT2.
+
+SYNTAX : mul_scalar MAT1 , REAL_NUMBER , MAT2
+
+
+
+TRANSPOSE
+-------------------------------------
+DETAILS : Assign the transposition of MAT1 to MAT2.
+
+SYNTAX : trans_mat MAT1 , MAT2
+
+
+
+PRINT MATRIX
+-------------------------------------
+DETAILS : Prints the matrix MAT.
+
+SYNTAX : print_mat MAT
+
+
+
+QUIT - LEAVE NOW AND NEVER COME BACK (GOLLUM).
+-------------------------------------
+DETAILS : Exit calculator.
+
+SYNTAX : stop
+
+
+
+$>read_mat MA_TA ,3,4,5,10    .00, -761
+
+illegal matrix name.
+
+$>read_mat MAT_A 4,4,3,2,7,7,8,5,3,-654.2,1133.96
+
+missing a comma.
+
+$>read_mat MAT_B,432.5,,257.21, -13463.3, 232
+
+multiple consecutive commas
+
+$>read_mat MAT_C ,125,12,432,-16.43.2,256
+
+illegal decimal pont
+
+$>read_mat MAT_A ,4,4,3,2,7,7,8,5,3,-654.2,1133.96
+
+   4.00    4.00    3.00    2.00 
+   7.00    7.00    8.00    5.00 
+   3.00 -654.20 1133.96    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>read_mat MAT_B,432.5,+63,257.21, -13463.3, 232
+
+ 432.50   63.00  257.21 -13463.30 
+ 232.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>read_mat MAT_C ,125,12,432,-16.432,256
+
+ 125.00   12.00  432.00  -16.43 
+ 256.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>mul_mat MAT_A,MAT_B,MAT_D
+
+2658.00  252.00 1028.84 -53853.20 
+4651.50  441.00 1800.47 -94243.10 
+-150476.90  189.00  771.63 -40389.90 
+   0.00    0.00    0.00    0.00 
+
+$>add_mat MAT_B,MAT_C,MAT_E
+
+ 557.50   75.00  689.21 -13479.73 
+ 488.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>sub_MAT MAT_A,MAT_C,MAT_F
+
+unknown operator.
+
+$>sub_mat MAT_A,MAT_C,MAT_F
+
+-121.00   -8.00 -429.00   18.43 
+-249.00    7.00    8.00    5.00 
+   3.00 -654.20 1133.96    0.00 
+   0.00    0.00    0.00    0.00 
+
+$>mul_scalar MAT_D,-12.2,MAT_C
+
+-32427.60 -3074.40 -12551.85 657009.04 
+-56748.30 -5380.20 -21965.73 1149765.82 
+1835818.18 -2305.80 -9413.89 492756.78 
+  -0.00   -0.00   -0.00   -0.00 
+
+$>trans_mat MAT_D,MAT_D
+
+2658.00 4651.50 -150476.90    0.00 
+ 252.00  441.00  189.00    0.00 
+1028.84 1800.47  771.63    0.00 
+-53853.20 -94243.10 -40389.90    0.00 
+
+$>stop
+
+See you again next time!
